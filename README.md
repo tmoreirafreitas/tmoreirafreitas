@@ -46,6 +46,7 @@ Atuo de forma transversal entre engenharia, segurança e negócio, liderando dec
 ### 📫 Como me encontrar
 - 💼 **LinkedIn:** [thiago-gabriel-moreira-freitas](https://www.linkedin.com/in/thiago-gabriel-moreira-freitas-b087604a)
 - ✍️ **Blog Profissional:** [tmoreirafreitas.wordpress.com](https://tmoreirafreitas.wordpress.com/)
+- 📧 **E-mail:** [tmoreirafreitas@gmail.com](mailto:tmoreirafreitas@gmail.com)
 
 ---
 
