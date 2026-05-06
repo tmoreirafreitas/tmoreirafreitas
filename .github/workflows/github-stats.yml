@@ -1,0 +1,48 @@
+name: Generate GitHub Stats
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create assets directory
+        run: mkdir -p assets
+
+      - name: Generate GitHub stats SVG
+        run: |
+          curl -L \
+            "https://github-readme-stats-three-mu-92.vercel.app/api?username=tmoreirafreitas&show_icons=true&theme=radical&locale=pt-br" \
+            -o assets/github-stats.svg
+
+      - name: Generate top languages SVG
+        run: |
+          curl -L \
+            "https://github-readme-stats-three-mu-92.vercel.app/api/top-langs/?username=tmoreirafreitas&layout=compact&theme=radical&locale=pt-br" \
+            -o assets/top-langs.svg
+
+      - name: Validate generated SVG files
+        run: |
+          grep -q "<svg" assets/github-stats.svg
+          grep -q "<svg" assets/top-langs.svg
+
+      - name: Commit and push generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/*.svg
+
+          git diff --cached --quiet || git commit -m "chore: update github stats"
+
+          git push
