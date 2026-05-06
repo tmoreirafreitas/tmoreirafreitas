@@ -37,8 +37,8 @@ Atuo de forma transversal entre engenharia, segurança e negócio, liderando dec
 ### 📈 Estatísticas e Tecnologias
 
 <div align="left">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=tmoreirafreitas&show_icons=true&theme=radical&locale=pt-br" alt="Estatísticas do GitHub" style="margin: 10px;" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tmoreirafreitas&layout=compact&theme=radical&locale=pt-br" alt="Linguagens mais usadas" style="margin: 10px;" />
+  <img height="180em" src="https://raw.githubusercontent.com/tmoreirafreitas/tmoreirafreitas/main/assets/github-stats.svg" alt="GitHub Stats" style="margin: 10px;"/>
+  <img height="180em" src="https://raw.githubusercontent.com/tmoreirafreitas/tmoreirafreitas/main/assets/top-langs.svg" alt="Top Languages" style="margin: 10px;"/>
 </div>
 
 ---
